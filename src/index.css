@@ -15,7 +15,7 @@ body {
 .App-header {
   /* border: 1px solid; */
   width: 80vw;
-  height:99.5vh;
+  height: 99.5vh;
   margin: 0 auto;
 }
 
@@ -58,4 +58,10 @@ body {
 
 .content .body h2 {
   font-size: 2vw;
+}
+
+@media screen and (max-width: 500px) {
+  .content .body h2, .links a, .nav-bar h1 {
+    font-size: 20px;
+  }
 }
