@@ -12,8 +12,23 @@ body {
   font-family: "Quicksand";
 }
 
-.App-header {
-  /* border: 1px solid; */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .App-header {
+  border: 1px solid;
   width: 80vw;
   height: 99.5vh;
   margin: 0 auto;
@@ -32,14 +47,14 @@ body {
 }
 
 .links {
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   width: 20%;
   display: flex;
   justify-content: space-between;
 }
 
 .links a {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   text-decoration: none;
   color: black;
   font-weight: 600;
@@ -64,4 +79,4 @@ body {
   .content .body h2, .links a, .nav-bar h1 {
     font-size: 20px;
   }
-}
+} */
