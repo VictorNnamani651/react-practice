@@ -12,22 +12,25 @@ body {
   font-family: "Quicksand";
 }
 
+.main-div {
+  border: 1px solid red;
+  height: 100vh;
+  width:100vw;
+}
 
 
 
 
 
+/* ===================FOR DESKTOP VIEW====================== */
 
+@media only screen and (min-width: 770px) {
+  body {
+    background-color: green;
+  }
+}
 
-
-
-
-
-
-
-
-
-/* .App-header {
+/* .main {
   border: 1px solid;
   width: 80vw;
   height: 99.5vh;
