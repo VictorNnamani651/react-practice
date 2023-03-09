@@ -3,7 +3,7 @@ function Nav() {
     <div className="nav-bar">
       <h1>The Nav Bar</h1>
 
-      <i class="fa fa-bars" aria-hidden="true"></i>
+      <i class="fa fa-bars side-menu-btn mobile-view" aria-hidden="true"></i>
 
       <div className="links desktop-view">
         <a href="/">Home</a>
