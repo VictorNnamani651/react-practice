@@ -29,7 +29,7 @@ div.desktop-view {
   padding: 0% 3%;
 }
 
-.nav-bar i {
+.side-menu-btn {
   border: 0.3vw solid rgb(233, 41, 73);
   border-radius: 10%;
   padding: 0.5% 1.5%;
@@ -37,7 +37,7 @@ div.desktop-view {
   margin-left: auto;
 }
 
-.nav-bar i:hover {
+.side-menu-btn:hover {
   cursor: pointer;
   background-color: rgb(233, 41, 73);
 }
