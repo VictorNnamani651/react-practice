@@ -21,6 +21,7 @@ body {
   border-bottom: 1px solid brown;
   display: flex;
   align-items: center;
+  padding: 1%;
 }
 
 /* --------------MOBILE VIEW------------------ */
@@ -77,7 +78,7 @@ body {
     width: 70%;
     margin: 0 auto;
     justify-content: space-between;
-    padding:1% 0%;
+    padding: 1% 0%;
   }
 
   div.links {
