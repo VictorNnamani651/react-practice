@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap");
 
+/* =========GENERAL PROPERTIES FOR BOTH MOBILE AND DESKTOP======== */
 * {
   margin: 0;
   padding: 0;
   font-family: "Quicksand";
+  box-sizing: border-box;
 }
 
 html,
@@ -18,13 +20,24 @@ body {
 }
 
 .nav-bar {
+  width: 70%;
   border-bottom: 1px solid rgba(165, 42, 42, 0.096);
   display: flex;
   align-items: center;
   padding: 1%;
 }
 
-/* --------------MOBILE VIEW------------------ */
+.nav-bar h1 {
+  color: rgb(233, 23, 58);
+}
+
+div.content-container {
+  /* border: 1px solid black; */
+  width: 100%;
+  margin-top: 3%;
+}
+
+/* =====================MOBILE VIEW ONLY===================== */
 
 @media only screen and (max-width: 769px) {
   div.desktop-view {
@@ -32,7 +45,7 @@ body {
   }
 
   .side-menu-btn {
-    border: 0.3vw solid rgb(233, 41, 73);
+    border: 0.3vw solid rgba(97, 63, 69, 0.185);
     border-radius: 10%;
     padding: 0.5% 1.5%;
     font-size: 5.5vw;
@@ -41,35 +54,48 @@ body {
 
   .side-menu-btn:hover {
     cursor: pointer;
-    background-color: rgb(233, 41, 73);
+    background-color: rgba(233, 41, 73, 0.397);
+  }
+
+  .nav-bar {
+    width: 100%;
   }
 
   div.links {
-    background-color: pink;
+    background-color: rgba(137, 165, 137, 0.658);
+    border: 1px solid red;
+    border-radius: 5%;
     position: absolute;
-    right: 0;
-    top: 0;
-    padding: 5.5vw 3vw;
+    right: 30%;
+    top: 30%;
+    padding: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 20%;
-    height: 100%;
+    width: 40vw;
   }
 
   div.links a {
     border: 1px solid red;
-    padding: 5% 0%;
+    padding: 4% 2%;
     text-align: center;
     font-size: 3vw;
+    text-decoration: none;
   }
 
   div.links a:nth-child(2) {
     margin-top: 40%;
   }
+
+  div.content {
+    /* border: 1px solid green; */
+    width: 70%;
+    margin-left: 1.5vw;
+    font-size: 2.3vw;
+  }
 }
 
-/* ===================FOR DESKTOP VIEW====================== */
+/* ===================FOR DESKTOP VIEW ONLY====================== */
 
 @media only screen and (min-width: 770px) {
   .mobile-view {
@@ -77,14 +103,9 @@ body {
   }
 
   .nav-bar {
-    width: 70%;
     margin: 0 auto;
     justify-content: space-between;
     padding: 1% 0%;
-  }
-
-  .nav-bar h1{
-    color: rgb(233, 23, 58);
   }
 
   div.links {
@@ -106,9 +127,8 @@ body {
     color: rgb(233, 23, 58);
   }
 
-  div.body {
-    /* border: 1px solid black; */
+  div.content{
     width: 70%;
-    margin: 3% auto 0;
+    margin:0 auto;
   }
 }
