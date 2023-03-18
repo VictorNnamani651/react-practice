@@ -18,7 +18,7 @@ body {
 }
 
 .nav-bar {
-  border-bottom: 1px solid brown;
+  border-bottom: 1px solid rgba(165, 42, 42, 0.096);
   display: flex;
   align-items: center;
   padding: 1%;
@@ -44,8 +44,8 @@ body {
     background-color: rgb(233, 41, 73);
   }
 
-  .links {
-    border: 1px solid green;
+  div.links {
+    background-color: pink;
     position: absolute;
     right: 0;
     top: 0;
@@ -53,17 +53,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 20%;
+    height: 100%;
   }
 
-  .links a {
+  div.links a {
     border: 1px solid red;
-    padding: 10% 0%;
+    padding: 5% 0%;
     text-align: center;
     font-size: 3vw;
   }
 
-  .links a:nth-child(2) {
-    margin-top: 10%;
+  div.links a:nth-child(2) {
+    margin-top: 40%;
   }
 }
 
@@ -81,8 +83,11 @@ body {
     padding: 1% 0%;
   }
 
+  .nav-bar h1{
+    color: rgb(233, 23, 58);
+  }
+
   div.links {
-    /* border: 1px solid red; */
     width: 20%;
     padding: 0.5% 0%;
     display: flex;
@@ -94,9 +99,16 @@ body {
     text-decoration: none;
     color: black;
     font-weight: 500;
+    font-size: 1.4vw;
   }
 
   div.links a:hover {
-    color: pink;
+    color: rgb(233, 23, 58);
+  }
+
+  div.body {
+    /* border: 1px solid black; */
+    width: 70%;
+    margin: 3% auto 0;
   }
 }

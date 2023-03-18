@@ -5,7 +5,7 @@ function Nav() {
 
       <i class="fa fa-bars side-menu-btn mobile-view" aria-hidden="true"></i>
 
-      <div className="links desktop-view">
+      <div className="links desktop-vie">
         <a href="/">Home</a>
         <a href="/create">New Blog</a>
       </div>
