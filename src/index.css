@@ -66,20 +66,20 @@ div.content-container {
     border: 1px solid red;
     border-radius: 5%;
     position: absolute;
-    right: 30%;
+    right: 25%;
     top: 30%;
     padding: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40vw;
+    width: 50vw;
   }
 
   div.links a {
     border: 1px solid red;
     padding: 4% 2%;
     text-align: center;
-    font-size: 3vw;
+    font-size: 4vw;
     text-decoration: none;
   }
 
