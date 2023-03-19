@@ -64,15 +64,16 @@ div.content-container {
   div.links {
     background-color: rgba(137, 165, 137, 0.658);
     border: 1px solid red;
-    border-radius: 5%;
+    border-radius: 3%;
     position: absolute;
     right: 25%;
     top: 30%;
-    padding: 5%;
+    padding-bottom:5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50vw;
+    overflow: hidden;
   }
 
   div.links a {
@@ -83,8 +84,31 @@ div.content-container {
     text-decoration: none;
   }
 
-  div.links a:nth-child(2) {
-    margin-top: 40%;
+  div.links a:nth-child(3) {
+    margin-top: 20%;
+  }
+
+  .close-btn-container {
+    /* border: 1px solid red; */
+    width: 100%;
+    text-align: end;
+    padding: 1.7% 2%;
+  }
+
+  div.links .side-menu-close-btn {
+    border: 1px solid;
+    border-radius: 10%;
+    padding: 1%;
+    background-color: transparent;
+    font-size: 6vw;
+  }
+
+  .side-menu-close-btn span {
+    display: block;
+  }
+
+  .side-menu-close-btn:hover {
+    cursor: pointer;
   }
 
   div.content {
@@ -127,8 +151,8 @@ div.content-container {
     color: rgb(233, 23, 58);
   }
 
-  div.content{
+  div.content {
     width: 70%;
-    margin:0 auto;
+    margin: 0 auto;
   }
 }
