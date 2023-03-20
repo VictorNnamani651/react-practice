@@ -119,6 +119,10 @@ div.content-container {
     margin-left: 1.5vw;
     font-size: 2.3vw;
   }
+
+  div.hide {
+    display: none;
+  }
 }
 
 /* ===================FOR DESKTOP VIEW ONLY====================== */
