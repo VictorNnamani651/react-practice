@@ -6,7 +6,7 @@ function Nav() {
   );
   let displayStatus = () => {
     display === "links hide"
-      ? setDisplay("links animate__animated animate__fadeIn")
+      ? setDisplay("links animate__animated animate__bounce")
       : setDisplay("links hide");
   };
 
