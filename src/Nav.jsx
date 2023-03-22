@@ -1,15 +1,15 @@
 import { useState } from "react";
 
 function Nav() {
-  let [display, setDisplay] = useState(
-    "links hide"
-  );
+  let [display, setDisplay] = useState("links hide");
   let displayStatus = () => {
-    display === "links hide"
-      ? setDisplay("links animate__animated animate__bounce")
-      : setDisplay("links hide");
+    if (display !== "links animate__animated animate__fadeIn") {
+      setDisplay("links animate__animated animate__fadeIn");
+    } else if (display === "links animate__animated animate__fadeIn") {
+      setDisplay("links animate__animated animate__fadeOut");
+    }
   };
-
+  // setDisplay("links animate__animated animate__fadeIn")
   return (
     <div className="nav-bar">
       <h1>The Nav Bar</h1>
