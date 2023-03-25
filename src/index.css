@@ -37,6 +37,10 @@ div.content-container {
   margin-top: 3%;
 }
 
+button {
+  user-select: none;
+}
+
 /* =====================MOBILE VIEW ONLY===================== */
 
 @media only screen and (max-width: 769px) {
@@ -44,7 +48,7 @@ div.content-container {
     display: none;
   }
 
-  .side-menu-btn {
+  .menu-btn {
     border: 0.3vw solid rgba(97, 63, 69, 0.185);
     border-radius: 10%;
     padding: 0.5% 1.5%;
@@ -52,7 +56,7 @@ div.content-container {
     margin-left: auto;
   }
 
-  .side-menu-btn:hover {
+  .menu-btn:hover {
     cursor: pointer;
     background-color: rgba(233, 41, 73, 0.397);
   }
@@ -96,7 +100,7 @@ div.content-container {
     padding: 1.7% 2%;
   }
 
-  div.links .side-menu-close-btn {
+  div.links .menu-close-btn {
     border: 1px solid rgba(0, 0, 0, 0.226);
     border-radius: 10%;
     padding: 1%;
@@ -105,11 +109,11 @@ div.content-container {
     font-size: 6vw;
   }
 
-  .side-menu-close-btn span {
+  .menu-close-btn span {
     display: block;
   }
 
-  .side-menu-close-btn:hover {
+  .menu-close-btn:hover {
     cursor: pointer;
   }
 

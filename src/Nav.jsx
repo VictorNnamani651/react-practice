@@ -17,13 +17,13 @@ function Nav() {
   return (
     <div className="nav-bar">
       <h1>The Nav Bar</h1>
-      <button className="side-menu-btn mobile-view" onClick={displayStatus}>
+      <button className="menu-btn mobile-view" onClick={displayStatus}>
         <i className="fa fa-bars" aria-hidden="true"></i>
       </button>
       <div className={`links ${menuDisplay} animate__animated animate_faster`}>
         <div className="close-btn-container mobile-view">
           <button
-            className="side-menu-close-btn"
+            className="menu-close-btn"
             onClick={() => {
               displayStatus();
             }}
