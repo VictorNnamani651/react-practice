@@ -1,11 +1,10 @@
 import { useState } from "react";
-import { logics } from "./logic";
 
 function Nav() {
   let [menuDisplay, setMenuDisplay] = useState("hide");
 
   let displayStatus = () => {
-    if (menuDisplay == "hide") {
+    if (menuDisplay === "hide") {
       setMenuDisplay("animate__fadeIn");
     } else if (menuDisplay === "animate__fadeIn") {
       setMenuDisplay("animate__fadeOut");
