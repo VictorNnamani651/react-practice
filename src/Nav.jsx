@@ -1,24 +1,34 @@
 import { useState } from "react";
+import { logics } from "./logic";
 
 function Nav() {
-  let [display, setDisplay] = useState("links hide");
+  let [menuDisplay, setMenuDisplay] = useState("hide");
+
   let displayStatus = () => {
-    if (display !== "links animate__animated animate__fadeIn") {
-      setDisplay("links animate__animated animate__fadeIn");
-    } else if (display === "links animate__animated animate__fadeIn") {
-      setDisplay("links animate__animated animate__fadeOut");
+    if (menuDisplay == "hide") {
+      setMenuDisplay("animate__fadeIn");
+    } else if (menuDisplay === "animate__fadeIn") {
+      setMenuDisplay("animate__fadeOut");
+      setTimeout(() => {
+        setMenuDisplay("hide");
+      }, 1000);
     }
   };
-  // setDisplay("links animate__animated animate__fadeIn")
+
   return (
     <div className="nav-bar">
       <h1>The Nav Bar</h1>
       <button className="side-menu-btn mobile-view" onClick={displayStatus}>
         <i className="fa fa-bars" aria-hidden="true"></i>
       </button>
-      <div className={display}>
+      <div className={`links ${menuDisplay} animate__animated animate_faster`}>
         <div className="close-btn-container mobile-view">
-          <button className="side-menu-close-btn" onClick={displayStatus}>
+          <button
+            className="side-menu-close-btn"
+            onClick={() => {
+              displayStatus();
+            }}
+          >
             <span className="material-symbols-outlined">close</span>
           </button>
         </div>
