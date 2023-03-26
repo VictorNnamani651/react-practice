@@ -1,9 +1,15 @@
 export const logics = {
-  closeAndHide: () => {
-    alert("Object testing");
-  },
-
-  secondTest: () => {
-    alert("this is the second property");
-  },
+  // displayStatus: (variable, func, className) => {
+  //   if (variable === "hide") {
+  //     func(className);
+  //   } else if (variable === className) {
+  //     func(className);
+  //     setTimeout(() => {
+  //       func(className);
+  //     }, 1000);
+  //   }
+  // },
+  // secondTest: () => {
+  //   alert("this is the second property");
+  // },
 };

@@ -1,12 +1,12 @@
 import Nav from "./Nav";
-import Home from "./Home";
+import Body from "./body";
 
 function App() {
   return (
     <div className="main-div">
       <Nav />
       <div className="content-container">
-        <Home />
+        <Body />
       </div>
     </div>
   );

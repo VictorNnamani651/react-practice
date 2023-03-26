@@ -1,4 +1,5 @@
 import { useState } from "react";
+// import { logics } from "./logic";
 
 function Nav() {
   let [menuDisplay, setMenuDisplay] = useState("hide");
@@ -16,7 +17,7 @@ function Nav() {
 
   return (
     <div className="nav-bar">
-      <h1>The Nav Bar</h1>
+      <h1>React Blog</h1>
       <button className="menu-btn mobile-view" onClick={displayStatus}>
         <i className="fa fa-bars" aria-hidden="true"></i>
       </button>
